@@ -1,0 +1,77 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #000;
+  color: #fff;
+  font-family: 'Unbounded', sans-serif;
+}
+.header_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+.again_btn {
+  font-family: inherit;
+  font-size: 30px;
+  font-weight: 700;
+  padding: 5px;
+  cursor: pointer;
+}
+.title {
+  text-align: center;
+  font-family: 'Codystar', sans-serif;
+  color: #fff;
+  font-size: 100px;
+  letter-spacing: 2px;
+  text-shadow: 0 0 10px #fff;
+  padding: 10px 0;
+}
+.number {
+  text-align: center;
+  font-size: 40px;
+  background-color: #fff;
+  color: #000;
+  width: 100px;
+  margin: 30px auto;
+  padding: 5px;
+}
+.input_container {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.number_input {
+  border: none;
+  outline: none;
+  font-size: 40px;
+  padding: 5px;
+  font-weight: 900;
+  width: 200px;
+  text-align: center;
+  font-style: italic;
+}
+.check_btn {
+  font-family: 'Unbounded', sans-serif;
+  font-size: 30px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  padding: 5px;
+}
+.input_group {
+  display: flex;
+  flex-direction: row;
+}
+.score_container {
+  margin: 100px auto;
+  max-width: 400px;
+}
+
+.score_container h2 {
+  margin: 10px 0;
+}
