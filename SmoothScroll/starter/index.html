@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      .section {
+        border: 1px solid black;
+        width: 100vw;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .scroll-btn {
+        font-family: inherit;
+        padding: 10px 20px;
+        font-weight: 600;
+        cursor: pointer;
+      }
+      h1 {
+        text-align: center;
+      }
+      .section--1 {
+        background: #ffe066;
+      }
+      .section--2 {
+        background: #8ce99a;
+      }
+      .section--3 {
+        background: #e599f7;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="section section--1">
+      <div>
+        <h1>section-1</h1>
+        <button class="scroll-btn scroll-btn--1">
+          Scroll to section-2 &downarrow;
+        </button>
+      </div>
+    </section>
+    <section class="section section--2">
+      <div>
+        <h1>section-2</h1>
+        <button class="scroll-btn scroll-btn--2">
+          Scroll to section-3 &downarrow;
+        </button>
+      </div>
+    </section>
+    <section class="section section--3">
+      <div>
+        <h1>section-3</h1>
+        <button class="scroll-btn scroll-btn--3">
+          Scroll to section-2 &downarrow;
+        </button>
+      </div>
+    </section>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
