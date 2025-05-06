@@ -1,0 +1,55 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #f1f3f5;
+}
+.tabbing_container {
+  max-width: 80%;
+  margin: 100px auto;
+}
+.tabbing_btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.tabbing_btn {
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 600;
+  background: none;
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.1s;
+  transform: translateY(0px);
+  font-size: 20px;
+}
+
+.tabbing_btn:active {
+  transform: translateY(3px);
+}
+
+.tabbing_btn--3 {
+  background: #ffd43b;
+}
+
+.tabbing_btn--2 {
+  background: #ffa94d;
+}
+
+.tabbing_btn--1 {
+  background: #da77f2;
+}
+
+.tabbing_content_container {
+  font-family: 'Space Grotesk', sans-serif;
+  margin: 50px 0;
+}
+.tabbing_content p {
+  font-size: 15px;
+}
