@@ -1,0 +1,95 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+header {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)),
+    url('https://images.pexels.com/photos/189295/pexels-photo-189295.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+nav {
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav_items {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.title {
+  max-width: 900px;
+  font-family: 'Cal Sans', sans-serif;
+  letter-spacing: 1px;
+  text-align: center;
+  margin: 200px auto;
+  font-size: 28px;
+  transform: translateY(-100px);
+  transition: 1s all;
+}
+header.active .title {
+  transform: translateY(0);
+}
+.section {
+  width: 100%;
+  height: 100vh;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.244);
+}
+.section-container {
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 250px 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 50px;
+}
+.section-left h1 {
+  font-size: 30px;
+  font-style: italic;
+}
+.section-left p {
+  font-size: 17px;
+}
+.section-left button {
+  margin: 10px;
+  background: none;
+  font-family: inherit;
+  padding: 10px 20px;
+  outline: none;
+}
+.section-left {
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: 0.7s all;
+}
+.section.active .section-left {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.section-right {
+  opacity: 0;
+  transform: translateX(100px);
+  transition: 0.7s all;
+}
+.section.active .section-right {
+  opacity: 1;
+  transform: translateX(0);
+}
+img {
+  max-width: 500px;
+}
